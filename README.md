@@ -9,15 +9,15 @@
 <img alt="repo-language-count" src="https://img.shields.io/github/languages/count/crc137/Ears-Bass-Boost-EQ-Any-Audio?style=flat&amp;color=0080ff" style="margin: 0px 2px;">
 <img alt="version" src="https://img.shields.io/badge/version-1.4.0-blue" style="margin: 0px 2px;">
 
-</div>
-
-<br />
-
 <div>
   <p>Chrome extension that lets you apply a live equalizer (EQ) to audio from the active tab.</br> 
 This repository is MV3-based and uses an offscreen document for Web Audio processing.</p>
   <img width="600" src="https://raw.coonlink.com/cloud/Ears-Bass-Boost-EQ-Any-Audio.png" alt="Ears: Bass Boost, EQ Any Audio!" />
 </div>
+
+</div>
+
+<br />
 
 ## Features
 - 11‑band EQ with gain control
