@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/coonlink">
-    <img width="90px" src="https://raw.coonlink.com/cloud/PixAI Daily/logo.svg" alt="PixAI Logo" />
+    <img width="90px" src="image/logo.128.png" alt="Ears: Bass Boost, EQ Any Audio! Logo" />
   </a>
   <h1>Ears: Bass Boost, EQ Any Audio!</h1>
 
