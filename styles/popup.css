@@ -1,0 +1,13 @@
+/*
+✨ CoonDev • https://dev.coonlink.com/
+
+ ▄█▄    ████▄ ████▄    ▄   ██▄   ▄███▄      ▄
+ █▀ ▀▄  █   █ █   █     █  █  █  █▀   ▀      █
+ █   ▀  █   █ █   █ ██   █ █   █ ██▄▄   █     █
+ █▄  ▄▀ ▀████ ▀████ █ █  █ █  █  █▄   ▄▀ █    █
+ ▀███▀              █  █ █ ███▀  ▀███▀    █  █
+                    █   ██                 █▐
+                                           ▐
+*/
+
+@import "./fonts.css";@import "./app.css";:root {--bg-1: #1f2731;--bg-2: #232d3a;--panel: rgba(255, 255, 255, 0.035);--panel-strong: rgba(255, 255, 255, 0.07);--text: #e6e1d6;--muted: #a3afbf;--accent: #cbb38e;--accent-2: #9fc7c0;--outline: rgba(230, 225, 214, 0.18);--chip: rgba(255, 255, 255, 0.05);--shadow: 0 6px 16px rgba(10, 14, 18, 0.32) }::-webkit-scrollbar-track {background: transparent }::-webkit-scrollbar {width: 0 }:focus {outline: none }:focus-visible {outline: none }

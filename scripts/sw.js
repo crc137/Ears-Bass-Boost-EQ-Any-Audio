@@ -1,0 +1,13 @@
+/*
+✨ CoonDev • https://dev.coonlink.com/
+
+ ▄█▄    ████▄ ████▄    ▄   ██▄   ▄███▄      ▄
+ █▀ ▀▄  █   █ █   █     █  █  █  █▀   ▀      █
+ █   ▀  █   █ █   █ ██   █ █   █ ██▄▄   █     █
+ █▄  ▄▀ ▀████ ▀████ █ █  █ █  █  █▄   ▄▀ █    █
+ ▀███▀              █  █ █ ███▀  ▀███▀    █  █
+                    █   ██                 █▐
+                                           ▐
+*/
+
+function ensureOffscreenDocumentPromise(){return new Promise(function(e){function t(){chrome.offscreen.createDocument({url:OFFSCREEN_URL,reasons:["AUDIO_PLAYBACK"],justification:"Process tab audio with Web Audio API for EQ."}).then(function(){e()})["catch"](function(t){return t&&t.message&&-1!==t.message.indexOf("Only one offscreen document")?e():(console.warn("Failed to create offscreen document",t),void e())})}return chrome.offscreen&&chrome.offscreen.createDocument?void(chrome.offscreen.hasDocument?chrome.offscreen.hasDocument().then(function(n){return n?e():void t()}):t()):e()})}const OFFSCREEN_URL="views/offscreen.html";chrome.runtime.onInstalled.addListener(function(){ensureOffscreenDocumentPromise()}),chrome.runtime.onStartup.addListener(function(){ensureOffscreenDocumentPromise()}),chrome.runtime.onMessage.addListener(function(e,t,n){if(e&&"getActiveTab"===e.type)return chrome.tabs.query({currentWindow:!0,active:!0},function(e){var t=e&&e.length?e[0]:null;n({tab:t})}),!0;if(e&&"eqTab"===e.type&&e.on)return function(){var t=function(e){chrome.tabs.query({currentWindow:!0,active:!0},function(t){e(t&&t.length?t[0]:null)})};try{t(function(t){return t?void(t.url&&0===t.url.indexOf("chrome-extension://"+chrome.runtime.id)||ensureOffscreenDocumentPromise().then(function(){return chrome.tabCapture&&chrome.tabCapture.getMediaStreamId?void chrome.tabCapture.getMediaStreamId({targetTabId:t.id},function(n){if(chrome.runtime.lastError)return void console.warn("tab capture stream id failed",chrome.runtime.lastError);var r=Object.assign({},e,{__fromServiceWorker:!0,streamId:n,tab:t});chrome.runtime.sendMessage(r)}):void console.warn("tabCapture API unavailable in service worker")})):void console.warn("active tab not available for capture")})}catch(n){console.warn("eqTab handling failed",n)}}(),!1;if(!(t&&t.url===chrome.runtime.getURL(OFFSCREEN_URL)||e&&e.__fromServiceWorker)){var r=e&&"getFFT"===e.type;return ensureOffscreenDocumentPromise().then(function(){var t=Object.assign({},e,{__fromServiceWorker:!0});return r?void chrome.runtime.sendMessage(t,function(e){chrome.runtime.lastError&&console.warn("Offscreen message error",chrome.runtime.lastError),n(e)}):void chrome.runtime.sendMessage(t)})["catch"](function(e){console.warn("Offscreen document unavailable",e),r&&n()}),r}});
