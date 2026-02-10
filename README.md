@@ -12,7 +12,7 @@
 <div>
   <p>Chrome extension that lets you apply a live equalizer (EQ) to audio from the active tab.</br> 
 This repository is MV3-based and uses an offscreen document for Web Audio processing.</p>
-  <img width="600" src="https://raw.coonlink.com/cloud/Ears-Bass-Boost-EQ-Any-Audio.png" alt="Ears: Bass Boost, EQ Any Audio!" />
+  <img width="600" src="https://raw.coonlink.com/cloud/Ears-Bass-Boost-EQ-Any-Audio.1.png" alt="Ears: Bass Boost, EQ Any Audio!" />
 </div>
 
 </div>
