@@ -24,6 +24,3 @@ This repository is MV3-based and uses an offscreen document for Web Audio proces
 ## Notes
 - Audio processing happens in `scripts/bg.js` within an offscreen document.
 - The service worker `scripts/sw.js` proxies tab capture and runtime messages.
-
-## License
-If you need a license file, add `LICENSE` and update this section.
