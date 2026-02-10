@@ -1,4 +1,17 @@
-# Ears: Bass Boost, EQ Any Audio!
+<div align="center">
+  <a href="https://github.com/coonlink">
+    <img width="90px" src="https://raw.coonlink.com/cloud/PixAI Daily/logo.svg" alt="PixAI Logo" />
+  </a>
+  <h1>Ears: Bass Boost, EQ Any Audio!</h1>
+
+<img alt="last-commit" src="https://img.shields.io/github/last-commit/crc137/Ears-Bass-Boost-EQ-Any-Audio?style=flat&amp;logo=git&amp;logoColor=white&amp;color=0080ff" style="margin: 0px 2px;">
+<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/crc137/Ears-Bass-Boost-EQ-Any-Audio?style=flat&amp;color=0080ff" style="margin: 0px 2px;">
+<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/crc137/Ears-Bass-Boost-EQ-Any-Audio?style=flat&amp;color=0080ff" style="margin: 0px 2px;">
+<img alt="version" src="https://img.shields.io/badge/version-1.4.0-blue" style="margin: 0px 2px;">
+
+</div>
+
+<br />
 
 <div>
   <p>Chrome extension that lets you apply a live equalizer (EQ) to audio from the active tab.</br> 
